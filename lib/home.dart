@@ -6,26 +6,81 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 25, 49, 69),
-        title: Text(
+        leading:IconButton(onPressed: (){
+
+          },
+          icon: Icon(
+            Icons.home,
+            color: const Color.fromARGB(255, 241, 230, 200),
+          ),
+          ),
+                title: Text(
           "Home",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             color: const Color.fromARGB(255, 241, 230, 200)
           ),
           ),
+          
         centerTitle: true,
+     
       ),
       backgroundColor: const Color.fromARGB(255, 25, 49, 69),
-      body: Center(  
-        child: Text(
-          "Welcome to\nHome page",
-          style: TextStyle(
-            fontSize: 35,
-            fontWeight:FontWeight.bold,
+      body:ListView(
+        children: [
+          Card(
             color: const Color.fromARGB(255, 241, 230, 200),
+             child: InkWell(
+              onTap: () {
+              },
+            child: ListTile(
+              leading: Icon(Icons.music_note),
+              title: Text("jhelum",
+              style: TextStyle(
+             fontSize: 22,
+             fontWeight: FontWeight.w300
+              ),
+              ),
+              subtitle: Text("faheem abdullah"),
+            ),
           ),
           ),
-      ),
+            Card(
+              
+            color: const Color.fromARGB(255, 241, 230, 200),
+            child: InkWell(
+              onTap: () {
+              },
+            child: ListTile(
+              leading: Icon(Icons.music_note),
+              title: Text("Inaam",
+              style: TextStyle(
+             fontSize: 22,
+             fontWeight: FontWeight.w300
+             
+              ),),
+              subtitle: Text("Anuv Jain"),
+            ),
+          ),
+            ),
+            Card(
+            color: const Color.fromARGB(255, 241, 230, 200),
+            child: InkWell(
+              onTap: () {
+              },
+            child: ListTile(
+              leading: Icon(Icons.music_note),
+              title: Text("Phir Na Aana",
+              style: TextStyle(
+             fontSize: 22,
+             fontWeight: FontWeight.w300
+              ),),
+              subtitle: Text("Ashwani Guptha"),
+            ),
+          )
+            ),
+        ],
+      )
     );
 }
 }

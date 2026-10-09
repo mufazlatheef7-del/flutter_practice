@@ -109,6 +109,20 @@ class Login extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 10),
+              Align(
+                alignment: AlignmentGeometry.bottomLeft,
+              child :TextButton(onPressed: (){
+
+              },
+              child: Text("Forgot password ?",
+              style: TextStyle(
+                color: const Color.fromARGB(241, 254, 244, 235),
+                fontSize: 16
+              ),
+              ),
+              )
+              )
             ],
           ),
         ),
