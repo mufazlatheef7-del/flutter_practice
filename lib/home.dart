@@ -79,6 +79,38 @@ class Home extends StatelessWidget {
             ),
           )
             ),
+                Card(
+            color: const Color.fromARGB(255, 241, 230, 200),
+            child: InkWell(
+              onTap: () {
+              },
+            child: ListTile(
+              leading: Icon(Icons.music_note),
+              title: Text("Magale",
+              style: TextStyle(
+             fontSize: 22,
+             fontWeight: FontWeight.w300
+              ),),
+              subtitle: Text("Sai abhyankkar"),
+            ),
+          )
+            ),
+                    Card(
+            color: const Color.fromARGB(255, 241, 230, 200),
+            child: InkWell(
+              onTap: () {
+              },
+            child: ListTile(
+              leading: Icon(Icons.music_note),
+              title: Text("indrajaalam",
+              style: TextStyle(
+             fontSize: 22,
+             fontWeight: FontWeight.w300
+              ),),
+              subtitle: Text("r"),
+            ),
+          )
+            ),
         ],
       )
     );
