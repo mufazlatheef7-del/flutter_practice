@@ -107,7 +107,7 @@ class Home extends StatelessWidget {
              fontSize: 22,
              fontWeight: FontWeight.w300
               ),),
-              subtitle: Text("r"),
+              subtitle: Text("vishnu vijay"),
             ),
           )
             ),
